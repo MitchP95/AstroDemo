@@ -1,5 +1,6 @@
 tasks:
   - name: astro
     command: |
-      cd astro/interstellar-iron
+      cd interstellar-iron
       npm install
+      npm run dev
