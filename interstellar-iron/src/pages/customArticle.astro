@@ -1,29 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import SampleArticle from '../layouts/SampleArticle.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<SampleArticle title="This is the Custom Article.">
 	<main>
-		<h1><span class="text-gradient">Mitchell Puersten</span></h1>
+		<h1>Custom Article</span></h1>
 		<p class="instructions">
-			Introduction.
+			To get started, open the directory <code>src/pages</code> in your project.<br />
+			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="/sandbox/"
-				title="Sandbox"
-				body="Checkout my component Sandbox. ❤️"
-			/>
-			<Card
-				href="/customArticle/"
-				title="Custom Article"
-				body="Go to custom article."
+				href="/."
+				title="Landing Page"
+				body="Check out my landing page."
 			/>
 		</ul>
-        
 	</main>
-</Layout>
+</SampleArticle>
 
 <style>
 	main {
