@@ -1,15 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import SampleArticle from '../layouts/SampleArticle.astro';
 import Card from '../components/Card.astro';
+
+import SmallLabelledField from '../components/LabelledField/SmallLabelledField.astro';
+import Dropdown from '../components/Dropdown.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<SampleArticle title="Sandbox">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
+		<SmallLabelledField label='Activity'></SmallLabelledField>
+		<Dropdown listName='Category...'></Dropdown>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/."
@@ -18,7 +18,7 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 	</main>
-</Layout>
+</SampleArticle>
 
 <style>
 	main {
